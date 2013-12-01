@@ -1,0 +1,28 @@
+{
+  "name": "hCheckJs",
+  "version": "0.0.1",
+  "homepage": "https://github.com/hinteadan/hCheckJs",
+  "authors": [
+    "Hintea Dan Alexandru <hinteadan@gmail.com>"
+  ],
+  "description": "A value and object validation library for JavaScript",
+  "main": "check.js",
+  "keywords": [
+    "check",
+    "value",
+    "object",
+    "validation",
+    "hintea",
+    "dan",
+    "alexandru",
+    "hintee"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
