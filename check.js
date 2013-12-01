@@ -61,11 +61,13 @@
         return true;
     }
 
-    this.notEmpty = notEmpty;
-    this.condition = condition;
-    this.isEmpty = isEmpty;
-    this.isNotEmpty = isNotEmpty;
-    this.areSame = sameObjects;
-    this.value = function (val) { return new value(val); }
+    this.H = this.H || {};
+    this.H.Check = this.H.Check || {};
+    this.H.Check.notEmpty = notEmpty;
+    this.H.Check.condition = condition;
+    this.H.Check.isEmpty = isEmpty;
+    this.H.Check.isNotEmpty = isNotEmpty;
+    this.H.Check.areSame = sameObjects;
+    this.H.Check.value = function (val) { return new value(val); }
 
-}).call(this.H.Check);
+}).call(this);
