@@ -16,7 +16,9 @@
     }
 
     function isEmpty(param) {
-        return param === undefined || param === null;
+        return param === undefined ||
+            param === null ||
+            (typeof (param) === 'string' && param.replace(/\s/gi, '') === '');
     }
 
     function isNotEmpty(param) {
