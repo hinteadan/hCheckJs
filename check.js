@@ -1,8 +1,14 @@
 ﻿(function (undefined) {
     "use strict";
 
+    function isEmpty(param) {
+        return param === undefined ||
+            param === null ||
+            (typeof (param) === 'string' && param.replace(/\s/gi, '') === '');
+    }
+
     function notEmpty(param, paramName) {
-        if (param === undefined || param === null) {
+        if (isEmpty(param)) {
             throw new Error("Parameter '"
                 + paramName
                 + "' cannot be null or undefined");
@@ -13,12 +19,6 @@
         if (!conditionResult) {
             throw new Error(message || "An error occured");
         }
-    }
-
-    function isEmpty(param) {
-        return param === undefined ||
-            param === null ||
-            (typeof (param) === 'string' && param.replace(/\s/gi, '') === '');
     }
 
     function isNotEmpty(param) {
